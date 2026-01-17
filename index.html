@@ -1,293 +1,613 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Agung Setya Budi - IT Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
-        rel="stylesheet">
-    <title>MUHAMMAD AGUNG SETYA BUDI</title>
 </head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header & Navigation -->
+    <header class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <span class="gradient-text">AGUNG</span><span class="text-white">SETYA</span>
+                </div>
+                <ul class="hidden md:flex space-x-10">
+                    <li><a href="#home" class="hover:text-cyan-400 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-cyan-400 transition duration-300">Profil</a></li>
+                    <li><a href="#experience" class="hover:text-cyan-400 transition duration-300">Pengalaman</a></li>
+                    <li><a href="#projects" class="hover:text-cyan-400 transition duration-300">Proyek</a></li>
+                    <li><a href="#contact" class="hover:text-cyan-400 transition duration-300">Kontak</a></li>
+                </ul>
+                <button id="mobile-menu-button" class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block hover:text-cyan-400 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="block hover:text-cyan-400 transition duration-300">Profil</a></li>
+                    <li><a href="#experience" class="block hover:text-cyan-400 transition duration-300">Pengalaman</a></li>
+                    <li><a href="#projects" class="block hover:text-cyan-400 transition duration-300">Proyek</a></li>
+                    <li><a href="#contact" class="block hover:text-cyan-400 transition duration-300">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<body>
-    <!--Loader-->
-    <div class="bg-loader">
-        <div class="loader"></div>
-    </div>
-    <nav class="container pt-3 navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand d-flex justify-content-start align-items-center" href="#">
-            <i class="fas fa-code fa-2x text-warning pb-2"></i>
-            <h5 class="d-inline pl-2 mt-2 text-white">AGUNG</h5>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="mb-6">
+                        <h1 class="text-4xl md:text-4xl font-bold mb-4">Muhammad Agung Setya Budi</h1>
+                        <h2 class="text-2xl md:text-3xl gradient-text font-bold mb-6">Web Developer & IT Support</h2>
+                        <p class="text-lg text-gray-300 mb-8">Pengalaman lebih dari 3 tahun dalam pengembangan sistem berbasis web dan pemeliharaan infrastruktur IT. Bersedia berkontribusi dalam pengembangan sistem informasi, dukungan IT dan peningkatan efisiensi operasional melalui solusi teknologi yang inovatif.</p>
+                        <div class="flex space-x-4">
+                            <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:opacity-90 transition duration-300">Lihat Proyek</a>
+                            <a href="#contact" class="px-6 py-3 glowing-border rounded-lg font-semibold hover:bg-gray-800 transition duration-300">Hubungi Saya</a>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-8">
+                        <div class="tech-icon">
+                            <i class="fab fa-laravel text-red-500 text-xl"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-js-square text-yellow-400 text-xl"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-html5 text-orange-500 text-xl"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-css3-alt text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-database text-green-500 text-xl"></i>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-network-wired text-purple-500 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full glowing-border overflow-hidden floating">
+                            <div class="w-full h-full bg-gradient-to-br from-cyan-900/30 to-blue-900/30 flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-6xl md:text-8xl text-cyan-400"></i>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-4">
-                    <a class="nav-link text-white navigation-link" href="#">Home</a>
-                </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link text-white navigation-link" href="#about">About</a>
-                </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link text-white navigation-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link text-white navigation-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link text-white navigation-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container main-container">
-        <div class="row main-row">
-            <div class="col-md-6">
-                <h2 class="text-white">Hello, I'm</h2>
-                <h1 class="text-warning m-heading">Muhammad Agung Setya Budi</h1>
-                <h2 class="text-white">Web Programmer & IT Support</h2>
-            </div>
-            <div class="col-md-6">
-                <img src="/images/me.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div id="about" class="container p-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/about_img.svg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6 pl-5 pt-5 pb-5 text-white">
-                <h3 class="text-warning">About Me</h3>
-                <h1 class="m-heading">A little bit about me</h1>
-                <p style="text-align: justify;">Saya adalah seorang yang tertarik dengan kemajuan dunia IT khususnya
-                    dibidang pemrograman web. Pada tahun 2018, pertama kalinya saya membuat suatu aplikasi web yang
-                    digunakan
-                    oleh orang lain. Saya merasa senang ketika telah menyelesaikan sebuah permasalahan menggunakan
-                    coding dan merasa tertantang ingin meningkatkan kemampuan coding saya.</p>
-                <p style="text-align: justify;">Harapan saya kedepannya, saya dapat belajar, berbagi dan mengaplikasikan
-                    keahlian ini kejenjang yang lebih luas agar berguna bagi masyarakat luas.</p>
-                <a href="./images/CV.pdf" class="btn btn-outline-warning"
-                    target="_blank">Curriculum Vitae</a>
-            </div>
-        </div>
-    </div>
-    <div id="services" class="container mt-3 pt-5">
-        <div class="row justify-content-center">
-            <h1 class="text-warning mb-2 pb-2">Services</h1>
-            <div class="col-12 info-service">
-                <div class="row">
-                    <div class="col-lg">
-                        <img src="./images/development.svg" alt="" class="float-left">
-                        <h4 class="text-white">Web Development</h4>
-                        <p class="text-white">PHP, Laravel, Javascript, Bootstrap</p>
+    <!-- Profile Section -->
+    <section id="about" class="py-16 px-6 bg-gray-800/30">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold section-title">Ringkasan Profil</h2>
+            <div class="card-glass p-8 mb-12">
+                <p class="text-lg mb-6">IT Professional dengan pengalaman lebih dari 3 tahun dalam pengembangan sistem berbasis web dan pemeliharaan infrastruktur IT. Memiliki pemahaman dasar jaringan dan kemampuan cepat belajar untuk menguasai teknologi baru sesuai kebutuhan perusahaan.</p>
+                <p class="text-lg mb-6">Berpengalaman dalam memberikan pelatihan teknis kepada pengguna dan bekerja secara kolaboratif dalam tim lintas fungsi. Siap berkontribusi dalam pengembangan system informasi, dukungan IT dan peningkatan efisiensi operasional melalui solusi teknologi yang inovatif.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 gradient-text">Pendidikan</h3>
+                        <div class="timeline-item">
+                            <h4 class="font-bold">S2 - Sistem Informasi</h4>
+                            <p class="text-cyan-400">Universitas Diponegoro, Semarang</p>
+                            <p class="text-gray-400">Feb 2023 – Mar 2025 | IPK 3.93</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-bold">S1 - Teknik Informatika</h4>
+                            <p class="text-cyan-400">Universitas Semarang, Semarang</p>
+                            <p class="text-gray-400">Sep 2015 – Mar 2020 | IPK 3.42</p>
+                        </div>
                     </div>
-                    <div class="col-lg">
-                        <img src="./images/database.svg" alt="" class="float-left">
-                        <h4 class="text-white">Database</h4>
-                        <p class="text-white">MySQL, PostgreSQL</p>
-                    </div>
-                    <div class="col-lg">
-                        <img src="./images/paid-content.svg" alt="" class="float-left">
-                        <h4 class="text-white">Multimedia</h4>
-                        <p class="text-white">Canva, Filmora</p>
-                    </div>
-                    <div class="col-lg">
-                        <img src="./images/cd.svg" alt="" class="float-left">
-                        <h4 class="text-white">Hardware Software</h4>
-                        <p class="text-white">Memperbaiki masalah komputer</p>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 gradient-text">Sertifikasi & Pelatihan</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
+                                <span>Web Development Laravel 11 (Agu 2024)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
+                                <span>Bootcamp Full-Stack Web Developer (Mar 2024)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
+                                <span>Mahir Membuat Database Aplikasi Professional (Okt 2023)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
+                                <span>CCNA Routing and Switching (Jul 2019)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
+                                <span>Oracle Database 10g: Introducing to SQL (Jun 2018)</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="projects" class="mt-3 pt-5">
-        <div class="container">
-            <h1 class="text-warning text-center mb-3 pb-2">My Projects</h1>
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/gaji.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Sistem Informasi Gaji</h5>
-                            <p class="card-text">PHP, Laravel, Bootstrap, MySQL</p>
-                            <a href="https://sigap.stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold section-title">Pengalaman Kerja</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Experience 1 -->
+                <div class="card-glass p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center mr-4">
+                            <i class="fas fa-university text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl">Staff IT</h3>
+                            <p class="text-cyan-400">STIE Cendekia Karya Utama</p>
                         </div>
                     </div>
+                    <p class="text-gray-400 mb-4">Jul 2021 – Agu 2024</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Mengembangkan sistem berbasis web untuk mendukung kegiatan pembelajaran dan administrasi yang digunakan lebih dari 1000 pengguna</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Melakukan perawatan perangkat keras dan perangkat lunak secara rutin</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Memberikan pelatihan lebih dari 30 staff dan dosen dalam pemanfaatan teknologi informasi</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/school.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Website Kampus</h5>
-                            <p class="card-text">Wordpress, MySQL</p>
-                            <a href="https://stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+                
+                <!-- Experience 2 -->
+                <div class="card-glass p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center mr-4">
+                            <i class="fas fa-school text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl">Staff IT (Internship)</h3>
+                            <p class="text-cyan-400">MA Hidayatus Syubban</p>
                         </div>
                     </div>
+                    <p class="text-gray-400 mb-4">Nov 2019 – Jan 2020</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Mengelola infrastruktur teknologi informasi di laboratorium komputer</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Mengembangkan situs web yang menyajikan informasi sekolah dengan fitur pendaftaran online</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/pmb.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">PMB Online</h5>
-                            <p class="card-text">PHP, Laravel, MySQL</p>
-                            <a href="https://pmb.stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+                
+                <!-- Experience 3 -->
+                <div class="card-glass p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center mr-4">
+                            <i class="fas fa-warehouse text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl">Staff IT (Internship)</h3>
+                            <p class="text-cyan-400">UD. Berkah Ibas Jaya</p>
                         </div>
                     </div>
+                    <p class="text-gray-400 mb-4">Nov 2018 – Jan 2019</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Mengatasi masalah hardware dan software untuk memastikan kelancaran operasional perusahaan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                            <span>Membangun sistem manajemen stok barang untuk memudahkan pemantauan stok</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/baak.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">BAAK</h5>
-                            <p class="card-text">Wordpress, MySQL</p>
-                            <a href="https://baak.stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gray-800/30">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold section-title">Proyek Sistem Informasi</h2>
+            <p class="text-lg mb-10 max-w-3xl">Berikut adalah beberapa sistem informasi yang telah dikembangkan selama pengalaman kerja di berbagai institusi pendidikan dan perusahaan.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card card-glass">
+                    <div class="project-bg bg-gradient-to-br from-cyan-900/40 to-blue-900/40"></div>
+                    <div class="project-content">
+                        <div class="project-icon bg-gradient-to-r from-cyan-500/20 to-blue-600/20 text-cyan-400">
+                            <i class="fas fa-money-bill-wave"></i>
                         </div>
+                        <h3 class="text-2xl font-bold mb-2">Sistem Penggajian</h3>
+                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
+                        <p class="text-gray-300 mb-4 text-sm">Sistem untuk mengelola penggajian staff dan dosen secara otomatis dan terintegrasi. Mengurangi kesalahan manual dan mempercepat proses payroll bulanan.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        
+                        <a href="https://sigap.stiecendekiaku.ac.id/" target="_blank" class="project-link" title="Lihat Detail">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/keuangan.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Sistem Informasi Keuangan</h5>
-                            <p class="card-text">PHP, Laravel, Bootstrap, MySQL</p>
-                            <a href="https://www.siku.stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+                
+                <!-- Project 2 -->
+                <div class="project-card card-glass">
+                    <div class="project-bg bg-gradient-to-br from-purple-900/40 to-pink-900/40"></div>
+                    <div class="project-content">
+                        <div class="project-icon bg-gradient-to-r from-purple-500/20 to-pink-600/20 text-purple-400">
+                            <i class="fas fa-user-graduate"></i>
                         </div>
+                        <h3 class="text-2xl font-bold mb-2">PMB Online</h3>
+                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
+                        <p class="text-gray-300 mb-4 text-sm">Sistem online untuk pendaftaran dan seleksi calon mahasiswa baru. Dilengkapi dengan fitur upload dokumen dan dashboard admin.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        
+                        <a href="https://pmb.stiecendekiaku.ac.id/" target="_blank" class="project-link" title="Lihat Detail">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/alumni.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Alumni & Pusat Karir</h5>
-                            <p class="card-text">PHP, Laravel, Bootstrap, MySQL</p>
-                            <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#laravelInventory">See
-                                Project</a>
+                
+                <!-- Project 3 -->
+                <div class="project-card card-glass">
+                    <div class="project-bg bg-gradient-to-br from-green-900/40 to-teal-900/40"></div>
+                    <div class="project-content">
+                        <div class="project-icon bg-gradient-to-r from-green-500/20 to-teal-600/20 text-green-400">
+                            <i class="fas fa-credit-card"></i>
                         </div>
+                        <h3 class="text-2xl font-bold mb-2">Sistem Pembayaran Kuliah</h3>
+                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
+                        <p class="text-gray-300 mb-4 text-sm">Sistem terintegrasi untuk pembayaran SPP dan biaya kuliah lainnya serta menghasilkan laporan keuangan otomatis.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        
+                        <a href="https://siku.stiecendekiaku.ac.id/" target="_blank" class="project-link" title="Lihat Detail">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/eskripsi.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Eskripsi</h5>
-                            <p class="card-text">PHP, Laravel, Bootstrap, MySQL</p>
-                            <a href="https://eskripsi.stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+                
+                <!-- Project 4 -->
+                <div class="project-card card-glass">
+                    <div class="project-bg bg-gradient-to-br from-orange-900/40 to-red-900/40"></div>
+                    <div class="project-content">
+                        <div class="project-icon bg-gradient-to-r from-orange-500/20 to-red-600/20 text-orange-400">
+                            <i class="fas fa-briefcase"></i>
                         </div>
+                        <h3 class="text-2xl font-bold mb-2">Alumni & Pusat Karir</h3>
+                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
+                        <p class="text-gray-300 mb-4 text-sm">Platform untuk menghubungkan alumni dengan pusat karir kampus. Fitur lowongan kerja, pelacakan alumni dan jaringan profesional.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        
+                        <a href="https://alumni.stiecendekiaku.ac.id/" target="_blank" class="project-link" title="Lihat Detail">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="images/elearning.svg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">E-learning</h5>
-                            <p class="card-text">PHP, Laravel, Bootstrap, MySQL</p>
-                            <a href="https://elearning.stiecendekiaku.ac.id/" class="btn btn-warning" target="_blank">See
-                                Project</a>
+                
+                <!-- Project 5 -->
+                <div class="project-card card-glass">
+                    <div class="project-bg bg-gradient-to-br from-yellow-900/40 to-amber-900/40"></div>
+                    <div class="project-content">
+                        <div class="project-icon bg-gradient-to-r from-yellow-500/20 to-amber-600/20 text-yellow-400">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">E-Skripsi</h3>
+                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
+                        <p class="text-gray-300 mb-4 text-sm">Sistem informasi untuk pengelolaan penelitian ilmiah dan skripsi mahasiswa. Meliputi pengajuan judul, bimbingan online, dan penilaian akhir.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        
+                        <a href="https://eskripsicku.stiecendekiaku.ac.id/" target="_blank" class="project-link" title="Lihat Detail">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card card-glass">
+                    <div class="project-bg bg-gradient-to-br from-indigo-900/40 to-blue-900/40"></div>
+                    <div class="project-content">
+                        <div class="project-icon bg-gradient-to-r from-indigo-500/20 to-blue-600/20 text-indigo-400">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">E-Learning</h3>
+                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
+                        <p class="text-gray-300 mb-4 text-sm">Sistem pembelajaran online dengan fitur lengkap: presensi, download materi, pengumpulan tugas dan penilaian untuk kegiatan belajar mengajar.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        
+                        <a href="https://elearningcku.stiecendekiaku.ac.id/" target="_blank" class="project-link" title="Lihat Detail">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Projects -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold mb-8 gradient-text text-center">Proyek Lainnya</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-glass p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Website Sekolah & Pendaftaran Online</h4>
+                                <p class="text-cyan-400 mb-2">MA Hidayatus Syubban</p>
+                                <p class="text-gray-400 text-sm">Website informasi sekolah dengan sistem pendaftaran siswa baru online.</p>
+                            </div>
+                            <a href="#" class="text-cyan-400 hover:text-cyan-300 transition duration-300" title="Buka di tab baru">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-glass p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Sistem Inventori Barang</h4>
+                                <p class="text-cyan-400 mb-2">UD. Berkah Ibas Jaya</p>
+                                <p class="text-gray-400 text-sm">Sistem manajemen stok barang untuk memudahkan pemantauan inventory perusahaan.</p>
+                            </div>
+                            <a href="#" class="text-cyan-400 hover:text-cyan-300 transition duration-300" title="Buka di tab baru">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
-    </div>
+    </section>
+
     <!-- Contact Section -->
-    <div id="contact" class="container-fluid">
-        <div class="container text-white py-5">
-            <h4 class="text-warning">Contact Me</h4>
-            <h1 class="m-heading">I'm ready to join</h1>
-            <div class="row pt-5">
-                <a class="col-md media-link btn" target="_blank"
-                    href="https://www.linkedin.com/in/muhammad-agung-setya-budi/">
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
+    <section id="contact" class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold section-title">Hubungi Saya</h2>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-1/2">
+                    <div class="card-glass p-8">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">Siap Bergabung</h3>
+                        <p class="mb-6">Saya terbuka untuk peluang kerja dan jangan ragu untuk menghubungi saya!</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Lokasi</h4>
+                                    <p class="text-gray-400">Semarang, Indonesia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
+                                    <i class="fas fa-user-graduate text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Kualifikasi</h4>
+                                    <p class="text-gray-400">S2 Sistem Informasi (IPK 3.93)</p>
+                                    <p class="text-gray-400">S1 Teknik Informatika (IPK 3.42)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
+                                    <i class="fas fa-briefcase text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Spesialisasi</h4>
+                                    <p class="text-gray-400">Web Development, IT Support</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 d-flex justify-content-end align-items-center">
-                            <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+                        
+                        <div class="flex space-x-4 mt-8">
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cyan-900/30 transition duration-300">
+                                <i class="fab fa-linkedin-in text-cyan-400"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cyan-900/30 transition duration-300">
+                                <i class="fab fa-github text-cyan-400"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cyan-900/30 transition duration-300">
+                                <i class="fab fa-whatsapp text-cyan-400"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cyan-900/30 transition duration-300">
+                                <i class="fas fa-envelope text-cyan-400"></i>
+                            </a>
                         </div>
                     </div>
-                </a>
-
-                <a class="col-md media-link btn" target="_blank" href="https://wa.link/jpm5qc">
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h3 class="m-0 pt-2 text-white">Whatsapp</h3>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end align-items-center">
-                            <i class="fab fa-whatsapp fa-2x text-secondary"></i>
-                        </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="card-glass p-8">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">Kirim Pesan</h3>
+                        <form id="contact-form">
+                            <div class="mb-6">
+                                <label for="name" class="block mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:border-cyan-500" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:border-cyan-500" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block mb-2">Subjek</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:border-cyan-500" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2">Pesan</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:border-cyan-500" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:opacity-90 transition duration-300">
+                                Kirim Pesan
+                            </button>
+                        </form>
                     </div>
-                </a>
-
-                <a class="col-md media-link btn" target="_blank" href="https://github.com/setyaagung">
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h3 class="m-0 pt-2 text-white">Github</h3>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end align-items-center">
-                            <i class="fab fa-github fa-2x text-secondary"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="col-md media-link bg-warning btn" target="_blank" href="mailto: setyaagung74@gmail.com">
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h3 class="m-0 pt-2 text-dark">Email</h3>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end align-items-center">
-                            <i class="fas fa-envelope fa-2x text-secondary"></i>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container text-muted text-center py-3 mt-5">
-            <h5>
-                Copyright &copy; 2020 |
-                <a class="text-warning text-decoration-none" href="#about">Muhammad Agung Setya Budi</a>
-            </h5>
+    <footer class="py-8 px-6 border-t border-gray-800">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold mb-2">
+                        <span class="gradient-text">AGUNG</span><span class="text-white">SETYA</span>
+                    </div>
+                    <p class="text-gray-400">Web Developer & IT Support</p>
+                </div>
+                <div class="text-gray-400">
+                    <p>&copy; 2026 Muhammad Agung Setya Budi. All rights reserved.</p>
+                    <p class="text-sm mt-1">Semarang, Indonesia</p>
+                </div>
+            </div>
         </div>
     </footer>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".bg-loader").hide();
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg hover:opacity-90 transition duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            // Show success message (in a real application, this would submit to a server)
+            alert(`Terima kasih ${name}! Pesan Anda dengan subjek "${subject}" telah dikirim. Saya akan menghubungi Anda melalui email ${email} segera.`);
+            
+            // Reset form
+            document.getElementById('contact-form').reset();
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements to animate
+        document.querySelectorAll('.card-glass, .section-title, .project-card').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
-
 </html>

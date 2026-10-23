@@ -1,744 +1,511 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Agung Setya Budi - IT Professional Portfolio</title>
+    <title>Muhammad Agung Setya Budi — IT Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="bg-gray-900 text-gray-100">
-    <!-- Header & Navigation -->
-    <header class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">
-                    <span class="gradient-text">AGUNG</span><span class="text-white">SETYA</span>
-                </div>
-                <ul class="hidden md:flex space-x-10">
-                    <li><a href="#home" class="hover:text-cyan-400 transition duration-300">Home</a></li>
-                    <li><a href="#about" class="hover:text-cyan-400 transition duration-300">Profil</a></li>
-                    <li><a href="#experience" class="hover:text-cyan-400 transition duration-300">Pengalaman</a></li>
-                    <li><a href="#projects" class="hover:text-cyan-400 transition duration-300">Proyek</a></li>
-                    <li><a href="#contact" class="hover:text-cyan-400 transition duration-300">Kontak</a></li>
-                </ul>
-                <button id="mobile-menu-button" class="md:hidden text-xl">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
-                <ul class="space-y-4">
-                    <li><a href="#home" class="block hover:text-cyan-400 transition duration-300">Home</a></li>
-                    <li><a href="#about" class="block hover:text-cyan-400 transition duration-300">Profil</a></li>
-                    <li><a href="#experience" class="block hover:text-cyan-400 transition duration-300">Pengalaman</a>
-                    </li>
-                    <li><a href="#projects" class="block hover:text-cyan-400 transition duration-300">Proyek</a></li>
-                    <li><a href="#contact" class="block hover:text-cyan-400 transition duration-300">Kontak</a></li>
-                </ul>
-            </div>
-        </nav>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a href="#home" class="brand">
+                Agung<span class="brand-dot">.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about">Profil</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#projects">Proyek</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+            <a href="#contact" class="btn btn-small btn-primary">Mari Bicara</a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-nav" class="mobile-nav">
+            <a href="#about">Profil</a>
+            <a href="#experience">Pengalaman</a>
+            <a href="#projects">Proyek</a>
+            <a href="#contact">Kontak</a>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 px-6">
-        <div class="container mx-auto">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <div class="mb-6">
-                        <h1 class="text-4xl md:text-4xl font-bold mb-4">Muhammad Agung Setya Budi</h1>
-                        <h2 class="text-2xl md:text-3xl gradient-text font-bold mb-6">Web Developer & IT Support</h2>
-                        <p class="text-lg text-gray-300 mb-8">Pengalaman lebih dari 4 tahun dalam pengembangan sistem
-                            berbasis web dan pemeliharaan infrastruktur IT. Bersedia berkontribusi dalam pengembangan
-                            sistem informasi, dukungan IT dan peningkatan efisiensi operasional melalui solusi teknologi
-                            yang inovatif.</p>
-                        <div class="flex space-x-4">
-                            <a href="#projects"
-                                class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:opacity-90 transition duration-300">Lihat
-                                Proyek</a>
-                            <a href="#contact"
-                                class="px-6 py-3 glowing-border rounded-lg font-semibold hover:bg-gray-800 transition duration-300">Hubungi
-                                Saya</a>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4 mt-8">
-                        <div class="tech-icon">
-                            <i class="fab fa-laravel text-red-500 text-xl"></i>
-                        </div>
-                        <div class="tech-icon">
-                            <i class="fab fa-js-square text-yellow-400 text-xl"></i>
-                        </div>
-                        <div class="tech-icon">
-                            <i class="fab fa-html5 text-orange-500 text-xl"></i>
-                        </div>
-                        <div class="tech-icon">
-                            <i class="fab fa-css3-alt text-blue-500 text-xl"></i>
-                        </div>
-                        <div class="tech-icon">
-                            <i class="fas fa-database text-green-500 text-xl"></i>
-                        </div>
-                        <div class="tech-icon">
-                            <i class="fas fa-network-wired text-purple-500 text-xl"></i>
-                        </div>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow">
+                    <span class="dot"></span> Tersedia untuk peluang baru
+                </p>
+                <h1 class="hero-title">
+                    Muhammad Agung<br>
+                    <em>Setya Budi</em>
+                </h1>
+                <p class="hero-role">IT Support &amp; Web Developer</p>
+                <p class="hero-desc">
+                    Profesional IT dengan pengalaman lebih dari 4 tahun dalam pengembangan
+                    sistem informasi berbasis web dan dukungan teknis end-user. Berfokus
+                    pada solusi teknologi yang efisien, pemeliharaan infrastruktur,
+                    dan peningkatan produktivitas pengguna.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Lihat Portofolio</a>
+                    <a href="#contact" class="btn btn-ghost">Hubungi Saya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-meta">
+                    <span><i class="fas fa-location-dot"></i> Semarang, Indonesia</span>
+                    <span><i class="fas fa-graduation-cap"></i> S1 Teknik Informatika</span>
+                    <span><i class="fas fa-graduation-cap"></i> S2 Sistem Informasi</span>
+                </div>
+            </div>
+            <div class="hero-portrait">
+                <div class="portrait-frame">
+                    <div class="portrait-inner">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                 </div>
-                <div class="lg:w-1/2 flex justify-center">
-                    <div class="relative">
-                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full glowing-border overflow-hidden floating">
-                            <div
-                                class="w-full h-full bg-gradient-to-br from-cyan-900/30 to-blue-900/30 flex items-center justify-center">
-                                <i class="fas fa-laptop-code text-6xl md:text-8xl text-cyan-400"></i>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl">
-                        </div>
-                        <div
-                            class="absolute -bottom-6 -left-6 w-32 h-32 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-xl">
-                        </div>
-                    </div>
+                <div class="portrait-card">
+                    <span class="portrait-card-label">Sejak 2019</span>
+                    <span class="portrait-card-value">IT &amp; Web</span>
                 </div>
+            </div>
+        </div>
+
+        <!-- Marquee skills -->
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>Laravel</span><span>•</span>
+                <span>PHP</span><span>•</span>
+                <span>JavaScript</span><span>•</span>
+                <span>MySQL</span><span>•</span>
+                <span>Web Development</span><span>•</span>
+                <span>Networking</span><span>•</span>
+                <span>Mikrotik</span><span>•</span>
+                <span>IT Support</span><span>•</span>
+                <span>Helpdesk</span><span>•</span>
+                <span>Windows / Linux</span><span>•</span>
+                <span>Laravel</span><span>•</span>
+                <span>PHP</span><span>•</span>
+                <span>JavaScript</span><span>•</span>
+                <span>MySQL</span><span>•</span>
+                <span>Web Development</span><span>•</span>
+                <span>Networking</span><span>•</span>
+                <span>Mikrotik</span><span>•</span>
+                <span>IT Support</span><span>•</span>
+                <span>Helpdesk</span><span>•</span>
+                <span>Windows / Linux</span><span>•</span>
             </div>
         </div>
     </section>
 
-    <!-- Profile Section -->
-    <section id="about" class="py-16 px-6 bg-gray-800/30">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold section-title">Ringkasan Profil</h2>
-            <div class="card-glass p-8 mb-12">
-                <p class="text-lg mb-6">Staff IT dengan pengalaman lebih dari 3 tahun sebagai Web Developer dan IT
-                    Support. Berpengalaman
-                    mengembangkan dan memelihara sistem informasi berbasis web yang digunakan lebih dari 1.000 pengguna,
-                    sekaligus memberikan dukungan teknis end-user terkait aplikasi, hardware, software dan jaringan.</p>
-                <p class="text-lg mb-6">Terbiasa
-                    melakukan troubleshooting, maintenance infrastruktur IT, backup data serta monitoring sistem untuk
-                    menjaga
-                    ketersediaan layanan. Memiliki kemampuan komunikasi yang baik, terbiasa melakukan pelatihan
-                    pengguna,
-                    serta mampu bekerja kolaboratif untuk meningkatkan efisiensi operasional dan kualitas layanan
-                    teknologi
-                    informasi.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4 gradient-text">Pendidikan</h3>
-                        <div class="timeline-item">
-                            <h4 class="font-bold">S2 - Sistem Informasi</h4>
-                            <p class="text-cyan-400">Universitas Diponegoro, Semarang</p>
-                            <p class="text-gray-400">Feb 2023 – Mar 2025 | IPK 3.93</p>
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-num">01</span>
+                <h2 class="section-title">Tentang <em>Saya</em></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        IT Profesional dengan pengalaman lebih dari 4 tahun sebagai IT Support
+                        dan Web Developer. Berpengalaman mengembangkan dan memelihara sistem
+                        informasi berbasis web yang digunakan lebih dari 1.000 pengguna serta
+                        memberikan dukungan teknis end-user terkait aplikasi, hardware,
+                        software dan jaringan.
+                    </p>
+                    <p>
+                        Terbiasa melakukan troubleshooting, maintenance infrastruktur IT,
+                        backup data serta monitoring sistem untuk menjaga ketersediaan layanan.
+                        Mampu menyampaikan materi pelatihan sistem IT kepada pengguna dari
+                        berbagai departemen dan berkolaborasi secara efektif untuk meningkatkan
+                        efisiensi operasional serta mutu layanan teknologi informasi.
+                    </p>
+                    <div class="about-facts">
+                        <div class="fact">
+                            <span class="fact-num">4+</span>
+                            <span class="fact-label">Tahun pengalaman</span>
                         </div>
-                        <div class="timeline-item">
-                            <h4 class="font-bold">S1 - Teknik Informatika</h4>
-                            <p class="text-cyan-400">Universitas Semarang, Semarang</p>
-                            <p class="text-gray-400">Sep 2015 – Feb 2020 | IPK 3.42</p>
+                        <div class="fact">
+                            <span class="fact-num">1.000+</span>
+                            <span class="fact-label">Pengguna sistem</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-num">8</span>
+                            <span class="fact-label">Sistem dikembangkan</span>
                         </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4 gradient-text">Sertifikasi & Pelatihan</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
-                                <span>Web Development Laravel 11 (Agu 2024)</span>
+                </div>
+
+                <aside class="about-side">
+                    <div class="side-card">
+                        <h3 class="side-title"><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+                        <ul class="edu-list">
+                            <li>
+                                <p class="edu-degree">S2 — Sistem Informasi</p>
+                                <p class="edu-school">Universitas Diponegoro, Semarang</p>
+                                <p class="edu-meta">Feb 2023 – Mar 2025 · IPK 3.93</p>
                             </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
-                                <span>Bootcamp Full-Stack Web Developer (Mar 2024)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
-                                <span>Mahir Membuat Database Aplikasi Professional (Okt 2023)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
-                                <span>CCNA Routing and Switching (Jul 2019)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-certificate text-cyan-400 mt-1 mr-3"></i>
-                                <span>Oracle Database 10g: Introducing to SQL (Jun 2018)</span>
+                            <li>
+                                <p class="edu-degree">S1 — Teknik Informatika</p>
+                                <p class="edu-school">Universitas Semarang, Semarang</p>
+                                <p class="edu-meta">Sep 2015 – Feb 2020 · IPK 3.42</p>
                             </li>
                         </ul>
                     </div>
+                </aside>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-grid">
+                <div class="skill-block">
+                    <h3 class="side-title"><i class="fas fa-code"></i> Hard Skills</h3>
+                    <div class="chip-row">
+                        <span class="chip">PHP</span>
+                        <span class="chip">Laravel</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">Web Development</span>
+                        <span class="chip">IT Support</span>
+                        <span class="chip">Helpdesk</span>
+                        <span class="chip">Networking</span>
+                        <span class="chip">Mikrotik</span>
+                        <span class="chip">System Monitoring</span>
+                        <span class="chip">Asset Management</span>
+                        <span class="chip">Windows / Linux</span>
+                    </div>
+                </div>
+                <div class="skill-block">
+                    <h3 class="side-title"><i class="fas fa-user-group"></i> Soft Skills</h3>
+                    <div class="chip-row">
+                        <span class="chip chip-accent">Effective Communication</span>
+                        <span class="chip chip-accent">User Training</span>
+                        <span class="chip chip-accent">Analytical Thinking</span>
+                        <span class="chip chip-accent">Problem Solving</span>
+                        <span class="chip chip-accent">Responsible</span>
+                        <span class="chip chip-accent">Team Collaboration</span>
+                        <span class="chip chip-accent">Adaptability</span>
+                        <span class="chip chip-accent">Detail-Oriented</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="cert-block">
+                <h3 class="side-title"><i class="fas fa-certificate"></i> Sertifikasi &amp; Pelatihan</h3>
+                <ul class="cert-list">
+                    <li><span class="cert-year">2026</span><span class="cert-name">Network Fundamental</span></li>
+                    <li><span class="cert-year">2024</span><span class="cert-name">Web Development Laravel 11</span></li>
+                    <li><span class="cert-year">2024</span><span class="cert-name">Bootcamp Full-Stack Web Developer</span></li>
+                    <li><span class="cert-year">2023</span><span class="cert-name">Mahir Membuat Database Aplikasi Professional</span></li>
+                    <li><span class="cert-year">2019</span><span class="cert-name">CCNA Routing and Switching</span></li>
+                    <li><span class="cert-year">2018</span><span class="cert-name">Oracle Database 10g: Introduction to SQL</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Pengalaman <em>Kerja</em></h2>
+            </div>
+
+            <div class="exp-list">
+                <!-- Exp 1 -->
+                <article class="exp-item">
+                    <div class="exp-left">
+                        <p class="exp-period">Apr 2026 — Sekarang</p>
+                        <p class="exp-company">PT Linksindo Makmur</p>
+                        <p class="exp-loc">Semarang</p>
+                    </div>
+                    <div class="exp-right">
+                        <h3 class="exp-role">IT Support</h3>
+                        <ul class="exp-bullets">
+                            <li>Menyediakan dukungan teknis lebih dari 100 pengguna untuk operasional contact center, menjamin kelancaran interaksi agen–pelanggan di berbagai channel komunikasi.</li>
+                            <li>Memberikan layanan helpdesk langsung maupun remote untuk penanganan cepat dan peningkatan kepuasan pengguna.</li>
+                            <li>Troubleshooting hardware, software, dan jaringan secara terstruktur untuk meminimalkan downtime.</li>
+                            <li>Mengelola kesiapan 50+ PC/laptop, aplikasi kerja, koneksi jaringan, instalasi dan konfigurasi.</li>
+                            <li>Monitoring &amp; maintenance jaringan serta sistem CCTV untuk stabilitas koneksi dan komunikasi real-time.</li>
+                            <li>Berkoordinasi dengan tim operasional dalam penyelesaian gangguan teknis dan percepatan recovery sistem.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Exp 2 -->
+                <article class="exp-item">
+                    <div class="exp-left">
+                        <p class="exp-period">Jul 2021 — Agu 2025</p>
+                        <p class="exp-company">STIE Cendekia Karya Utama</p>
+                        <p class="exp-loc">Semarang</p>
+                    </div>
+                    <div class="exp-right">
+                        <h3 class="exp-role">Staff IT</h3>
+                        <ul class="exp-bullets">
+                            <li>Mengembangkan &amp; memelihara sistem informasi berbasis web untuk 1.000+ pengguna, meningkatkan efisiensi administrasi dan akademik.</li>
+                            <li>Dukungan teknis end-user terkait aplikasi, hardware, software, dan jaringan.</li>
+                            <li>Troubleshooting komputer, LAN &amp; WiFi, instalasi software, dan maintenance OS.</li>
+                            <li>Mengelola aset hardware &amp; software serta menyiapkan infrastruktur IT kampus.</li>
+                            <li>Memberikan pelatihan pemanfaatan teknologi informasi kepada staff dan dosen.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Exp 3 -->
+                <article class="exp-item">
+                    <div class="exp-left">
+                        <p class="exp-period">Nov 2019 — Jan 2020</p>
+                        <p class="exp-company">MA Hidayatus Syubban</p>
+                        <p class="exp-loc">Semarang</p>
+                    </div>
+                    <div class="exp-right">
+                        <h3 class="exp-role">Staff IT (Internship)</h3>
+                        <ul class="exp-bullets">
+                            <li>Mengelola dan memelihara infrastruktur laboratorium komputer sekolah.</li>
+                            <li>Instalasi software, maintenance OS, troubleshooting hardware &amp; software.</li>
+                            <li>Mengembangkan website sekolah dan sistem pendaftaran siswa baru online.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Exp 4 -->
+                <article class="exp-item">
+                    <div class="exp-left">
+                        <p class="exp-period">Nov 2018 — Jan 2019</p>
+                        <p class="exp-company">UD. Berkah Ibas Jaya</p>
+                        <p class="exp-loc">Semarang</p>
+                    </div>
+                    <div class="exp-right">
+                        <h3 class="exp-role">Staff IT (Internship)</h3>
+                        <ul class="exp-bullets">
+                            <li>Mengatasi masalah hardware dan software untuk kelancaran operasional perusahaan.</li>
+                            <li>Membangun sistem manajemen stok barang untuk mempercepat pelaporan dan mengurangi kesalahan pencatatan manual.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Portofolio <em>Proyek</em></h2>
+            </div>
+            <p class="section-lead">
+                Kumpulan sistem informasi yang dikembangkan selama pengalaman kerja
+                di institusi pendidikan dan perusahaan.
+            </p>
+
+            <div class="project-grid">
+                <!-- 1 -->
+                <a href="https://sigap.stiecendekiaku.ac.id/" target="_blank" class="project">
+                    <div class="project-top">
+                        <span class="project-index">01</span>
+                        <i class="fas fa-arrow-up-right-from-square project-arrow"></i>
+                    </div>
+                    <h3 class="project-title">Sistem Penggajian</h3>
+                    <p class="project-org">STIE Cendekia Karya Utama</p>
+                    <p class="project-desc">Pengelolaan penggajian staff &amp; dosen secara otomatis dan terintegrasi, mengurangi kesalahan manual.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                </a>
+
+                <!-- 2 -->
+                <a href="https://pmb.stiecendekiaku.ac.id/" target="_blank" class="project">
+                    <div class="project-top">
+                        <span class="project-index">02</span>
+                        <i class="fas fa-arrow-up-right-from-square project-arrow"></i>
+                    </div>
+                    <h3 class="project-title">PMB Online</h3>
+                    <p class="project-org">STIE Cendekia Karya Utama</p>
+                    <p class="project-desc">Pendaftaran dan seleksi calon mahasiswa baru dengan fitur upload dokumen dan dashboard admin.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                </a>
+
+                <!-- 3 -->
+                <a href="https://siku.stiecendekiaku.ac.id/" target="_blank" class="project">
+                    <div class="project-top">
+                        <span class="project-index">03</span>
+                        <i class="fas fa-arrow-up-right-from-square project-arrow"></i>
+                    </div>
+                    <h3 class="project-title">Sistem Pembayaran Kuliah</h3>
+                    <p class="project-org">STIE Cendekia Karya Utama</p>
+                    <p class="project-desc">Pembayaran SPP &amp; biaya kuliah terintegrasi dengan laporan keuangan otomatis.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                </a>
+
+                <!-- 4 -->
+                <a href="https://alumni.stiecendekiaku.ac.id/" target="_blank" class="project">
+                    <div class="project-top">
+                        <span class="project-index">04</span>
+                        <i class="fas fa-arrow-up-right-from-square project-arrow"></i>
+                    </div>
+                    <h3 class="project-title">Alumni &amp; Pusat Karir</h3>
+                    <p class="project-org">STIE Cendekia Karya Utama</p>
+                    <p class="project-desc">Platform penghubung alumni dengan pusat karir: lowongan, pelacakan alumni, jaringan profesional.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                </a>
+
+                <!-- 5 -->
+                <a href="https://eskripsicku.stiecendekiaku.ac.id/" target="_blank" class="project">
+                    <div class="project-top">
+                        <span class="project-index">05</span>
+                        <i class="fas fa-arrow-up-right-from-square project-arrow"></i>
+                    </div>
+                    <h3 class="project-title">E-Skripsi</h3>
+                    <p class="project-org">STIE Cendekia Karya Utama</p>
+                    <p class="project-desc">Pengelolaan penelitian ilmiah &amp; skripsi mahasiswa: input data, verifikasi, publikasi.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                </a>
+
+                <!-- 6 -->
+                <a href="https://elearningcku.stiecendekiaku.ac.id/" target="_blank" class="project">
+                    <div class="project-top">
+                        <span class="project-index">06</span>
+                        <i class="fas fa-arrow-up-right-from-square project-arrow"></i>
+                    </div>
+                    <h3 class="project-title">E-Learning</h3>
+                    <p class="project-org">STIE Cendekia Karya Utama</p>
+                    <p class="project-desc">Pembelajaran online dengan presensi, materi, pengumpulan tugas dan penilaian.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Additional -->
+            <div class="project-extra">
+                <div class="extra-item">
+                    <div>
+                        <p class="extra-index">07</p>
+                        <h4>Website Sekolah &amp; Pendaftaran Online</h4>
+                        <p class="extra-org">MA Hidayatus Syubban</p>
+                    </div>
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="extra-item">
+                    <div>
+                        <p class="extra-index">08</p>
+                        <h4>Sistem Inventori Barang</h4>
+                        <p class="extra-org">UD. Berkah Ibas Jaya</p>
+                    </div>
+                    <i class="fas fa-boxes-stacked"></i>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-16 px-6">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold section-title">Pengalaman Kerja</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Experience 1 -->
-                <div class="card-glass p-6">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center mr-4">
-                            <i class="fas fa-university text-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-xl">Staff IT</h3>
-                            <p class="text-cyan-400">STIE Cendekia Karya Utama</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 mb-4">Jul 2021 – Agu 2025</p>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Mengembangkan dan memelihara sistem informasi berbasis web yang digunakan lebih dari
-                                1000 pengguna sehingga meningkatkan efisiensi administrasi dan akademik serta mengurangi
-                                proses manual</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Memberikan dukungan teknis end-user terkait aplikasi, hardware, software dan jaringan
-                                sehingga
-                                mempercepat penyelesaian kendala operasional harian</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Menangani troubleshooting komputer, LAN & WiFi, instalasi software dan maintenance OS
-                                yang
-                                berdampak pada menurunnya downtime perangkat dan gangguan layanan</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Mengelola asset hardware & software serta menyiapkan infrastruktur IT sehingga
-                                penggunaan aset
-                                lebih tertata dan mendukung operasional kampus secara berkelanjutan</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Mengolah dan mengoordinasikan data untuk pengembangan dan implementasi aplikasi
-                                sehingga
-                                proses pengembangan sistem lebih terstruktur dan tepat sasaran</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span> Memberikan pelatihan kepada staff dan dosen dalam pemanfaatan teknologi informasi
-                                sehingga
-                                meningkatkan produktivitas pengguna dan mengurangi permintaan dukungan teknis berulang
-                            </span>
-                        </li>
-                    </ul>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Mari <em>Terhubung</em></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-lead">
+                    <p>
+                        Saya terbuka untuk peluang kerja, proyek kolaborasi, atau diskusi
+                        tentang solusi teknologi untuk bisnis Anda.
+                    </p>
+                    <a href="mailto:setyaagung74@gmail.com" class="contact-email">
+                        setyaagung74@gmail.com
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Experience 2 -->
-                <div class="card-glass p-6">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center mr-4">
-                            <i class="fas fa-school text-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-xl">Staff IT (Internship)</h3>
-                            <p class="text-cyan-400">MA Hidayatus Syubban</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 mb-4">Nov 2019 – Jan 2020</p>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span> Mengelola dan memelihara infrastruktur laboratorium komputer sehingga seluruh
-                                perangkat siap
-                                digunakan dan mendukung kelancaran proses pembelajaran berbasis teknologi
-                                informasi</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Menangani instalasi software, maintenance OS, serta troubleshooting hardware &
-                                software, yang
-                                mengurangi gangguan teknis saat kegiatan belajar mengajar</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Mengembangkan website sekolah dan sistem pendaftaran siswa baru online sehingga
-                                mempermudah proses administrasi dan meningkatkan akses informasi bagi calon siswa</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Experience 3 -->
-                <div class="card-glass p-6">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center mr-4">
-                            <i class="fas fa-warehouse text-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-xl">Staff IT (Internship)</h3>
-                            <p class="text-cyan-400">UD. Berkah Ibas Jaya</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 mb-4">Nov 2018 – Jan 2019</p>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Mengatasi masalah hardware dan software untuk memastikan kelancaran operasional
-                                perusahaan</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
-                            <span>Membangun sistem manajemen stok barang untuk memudahkan pemantauan stok barang dan
-                                mempercepat proses pelaporan secara otomatis serta mengurangi kesalahan pencatatan
-                                manual</span>
-                        </li>
-                    </ul>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/muhammad-agung-setya-budi/" target="_blank" class="contact-item">
+                        <span>LinkedIn</span>
+                        <span class="contact-meta">Profil profesional <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a href="https://setyaagung.github.io" target="_blank" class="contact-item">
+                        <span>GitHub</span>
+                        <span class="contact-meta">Portofolio &amp; kode <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a href="https://wa.me/6281330704223" target="_blank" class="contact-item">
+                        <span>WhatsApp</span>
+                        <span class="contact-meta">+62 813 3070 4223 <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a href="IT Support - Muhammad Agung Setya Budi.pdf" target="_blank" class="contact-item">
+                        <span>Resume</span>
+                        <span class="contact-meta">Download CV <i class="fas fa-download"></i></span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 px-6 bg-gray-800/30">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold section-title">Proyek Sistem Informasi</h2>
-            <p class="text-lg mb-10 max-w-3xl">Berikut adalah beberapa sistem informasi yang telah dikembangkan selama
-                pengalaman kerja di berbagai institusi pendidikan dan perusahaan.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card card-glass">
-                    <div class="project-bg bg-gradient-to-br from-cyan-900/40 to-blue-900/40"></div>
-                    <div class="project-content">
-                        <div class="project-icon bg-gradient-to-r from-cyan-500/20 to-blue-600/20 text-cyan-400">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">Sistem Penggajian</h3>
-                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
-                        <p class="text-gray-300 mb-4 text-sm">Sistem untuk mengelola penggajian staff dan dosen secara
-                            otomatis dan terintegrasi serta mengurangi kesalahan manual.</p>
-
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-
-                        <a href="https://sigap.stiecendekiaku.ac.id/" target="_blank" class="project-link"
-                            title="Lihat Detail">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card card-glass">
-                    <div class="project-bg bg-gradient-to-br from-purple-900/40 to-pink-900/40"></div>
-                    <div class="project-content">
-                        <div class="project-icon bg-gradient-to-r from-purple-500/20 to-pink-600/20 text-purple-400">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">PMB Online</h3>
-                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
-                        <p class="text-gray-300 mb-4 text-sm">Sistem online untuk pendaftaran dan seleksi calon
-                            mahasiswa baru. Dilengkapi dengan fitur upload dokumen dan dashboard admin.</p>
-
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-
-                        <a href="https://pmb.stiecendekiaku.ac.id/" target="_blank" class="project-link"
-                            title="Lihat Detail">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card card-glass">
-                    <div class="project-bg bg-gradient-to-br from-green-900/40 to-teal-900/40"></div>
-                    <div class="project-content">
-                        <div class="project-icon bg-gradient-to-r from-green-500/20 to-teal-600/20 text-green-400">
-                            <i class="fas fa-credit-card"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">Sistem Pembayaran Kuliah</h3>
-                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
-                        <p class="text-gray-300 mb-4 text-sm">Sistem terintegrasi untuk pembayaran SPP dan biaya kuliah
-                            lainnya serta menghasilkan laporan keuangan otomatis.</p>
-
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-
-                        <a href="https://siku.stiecendekiaku.ac.id/" target="_blank" class="project-link"
-                            title="Lihat Detail">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card card-glass">
-                    <div class="project-bg bg-gradient-to-br from-orange-900/40 to-red-900/40"></div>
-                    <div class="project-content">
-                        <div class="project-icon bg-gradient-to-r from-orange-500/20 to-red-600/20 text-orange-400">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">Alumni & Pusat Karir</h3>
-                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
-                        <p class="text-gray-300 mb-4 text-sm">Platform untuk menghubungkan alumni dengan pusat karir
-                            kampus. Fitur lowongan kerja, pelacakan alumni dan jaringan profesional.</p>
-
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-
-                        <a href="https://alumni.stiecendekiaku.ac.id/" target="_blank" class="project-link"
-                            title="Lihat Detail">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card card-glass">
-                    <div class="project-bg bg-gradient-to-br from-yellow-900/40 to-amber-900/40"></div>
-                    <div class="project-content">
-                        <div class="project-icon bg-gradient-to-r from-yellow-500/20 to-amber-600/20 text-yellow-400">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">E-Skripsi</h3>
-                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
-                        <p class="text-gray-300 mb-4 text-sm">Sistem informasi untuk pengelolaan penelitian ilmiah dan
-                            skripsi mahasiswa. Meliputi penginputan data, verifikasi dan publikasi.</p>
-
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-
-                        <a href="https://eskripsicku.stiecendekiaku.ac.id/" target="_blank" class="project-link"
-                            title="Lihat Detail">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card card-glass">
-                    <div class="project-bg bg-gradient-to-br from-indigo-900/40 to-blue-900/40"></div>
-                    <div class="project-content">
-                        <div class="project-icon bg-gradient-to-r from-indigo-500/20 to-blue-600/20 text-indigo-400">
-                            <i class="fas fa-laptop-house"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">E-Learning</h3>
-                        <p class="text-cyan-400 mb-3">STIE Cendekia Karya Utama</p>
-                        <p class="text-gray-300 mb-4 text-sm">Sistem pembelajaran online dengan fitur lengkap:
-                            presensi, download materi, pengumpulan tugas dan penilaian untuk kegiatan belajar mengajar.
-                        </p>
-
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-
-                        <a href="https://elearningcku.stiecendekiaku.ac.id/" target="_blank" class="project-link"
-                            title="Lihat Detail">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-brand">Agung<span class="brand-dot">.</span></p>
+                <p class="footer-role">IT Support &amp; Web Developer — Semarang, Indonesia</p>
             </div>
-
-            <!-- Additional Projects -->
-            <div class="mt-16">
-                <h3 class="text-2xl font-bold mb-8 gradient-text text-center">Proyek Lainnya</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="card-glass p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h4 class="font-bold text-lg mb-2">Website Sekolah & Pendaftaran Online</h4>
-                                <p class="text-cyan-400 mb-2">MA Hidayatus Syubban</p>
-                                <p class="text-gray-400 text-sm">Website informasi sekolah dengan sistem pendaftaran
-                                    siswa baru online.</p>
-                            </div>
-                            <a href="#" class="text-cyan-400 hover:text-cyan-300 transition duration-300"
-                                title="Buka di tab baru">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card-glass p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h4 class="font-bold text-lg mb-2">Sistem Inventori Barang</h4>
-                                <p class="text-cyan-400 mb-2">UD. Berkah Ibas Jaya</p>
-                                <p class="text-gray-400 text-sm">Sistem manajemen stok barang untuk memudahkan
-                                    pemantauan inventory perusahaan.</p>
-                            </div>
-                            <a href="#" class="text-cyan-400 hover:text-cyan-300 transition duration-300"
-                                title="Buka di tab baru">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6 bg-gray-800/30">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold section-title">Kontak & Media Sosial</h2>
-            <div class="flex flex-col lg:flex-row gap-10">
-                <div class="lg:w-1/2">
-                    <div class="card-glass p-8">
-                        <h3 class="text-2xl font-bold mb-6 gradient-text">Informasi Kontak</h3>
-                        <p class="mb-6">Saya terbuka untuk peluang kerja, proyek kolaborasi, atau diskusi tentang
-                            solusi teknologi untuk bisnis Anda. Jangan ragu untuk menghubungi saya melalui media sosial
-                            atau email.</p>
-
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
-                                    <i class="fas fa-map-marker-alt text-cyan-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold">Lokasi</h4>
-                                    <p class="text-gray-400">Semarang, Indonesia</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
-                                    <i class="fas fa-user-graduate text-cyan-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold">Kualifikasi</h4>
-                                    <p class="text-gray-400">S2 - Sistem Informasi</p>
-                                    <p class="text-gray-400">S1 - Teknik Informatika</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
-                                    <i class="fas fa-briefcase text-cyan-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold">Spesialisasi</h4>
-                                    <p class="text-gray-400">Web Development, IT Support</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-cyan-900/30 flex items-center justify-center mr-4">
-                                    <i class="fas fa-download text-cyan-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold">Download CV</h4>
-                                    <p class="text-gray-400">Unduh CV lengkap dalam format PDF</p>
-                                    <a href="IT - MUHAMMAD AGUNG SETYA BUDI.pdf" target="_blank"
-                                        class="inline-flex items-center mt-2 text-cyan-400 hover:text-cyan-300 transition duration-300">
-                                        <span>Download CV</span>
-                                        <i class="fas fa-arrow-down ml-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/2">
-                    <div class="card-glass p-8 h-full">
-                        <h3 class="text-2xl font-bold mb-6 gradient-text">Hubungi Saya</h3>
-                        <p class="mb-8">Silakan hubungi saya melalui salah satu media sosial di bawah ini. Saya
-                            biasanya akan segera membalas pesan Anda.</p>
-
-                        <div class="grid grid-cols-2 gap-6">
-                            <a href="https://www.linkedin.com/in/muhammad-agung-setya-budi/" target="_blank"
-                                class="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition duration-300">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-blue-900/30 flex items-center justify-center mb-4">
-                                    <i class="fab fa-linkedin-in text-blue-400 text-2xl"></i>
-                                </div>
-                                <span class="font-medium">LinkedIn</span>
-                                <span class="text-gray-400 text-sm mt-1">Profil Profesional</span>
-                            </a>
-
-                            <a href="#"
-                                class="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition duration-300">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gray-900/30 flex items-center justify-center mb-4">
-                                    <i class="fab fa-github text-white text-2xl"></i>
-                                </div>
-                                <span class="font-medium">GitHub</span>
-                                <span class="text-gray-400 text-sm mt-1">Proyek & Kode</span>
-                            </a>
-
-                            <a href="https://wa.me/6281330704223" target="_blank"
-                                class="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition duration-300">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-green-900/30 flex items-center justify-center mb-4">
-                                    <i class="fab fa-whatsapp text-green-400 text-2xl"></i>
-                                </div>
-                                <span class="font-medium">WhatsApp</span>
-                                <span class="text-gray-400 text-sm mt-1">Pesan Langsung</span>
-                            </a>
-
-                            <a href="mailto:setyaagung74@gmail.com"
-                                class="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition duration-300">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-red-900/30 flex items-center justify-center mb-4">
-                                    <i class="fas fa-envelope text-red-400 text-2xl"></i>
-                                </div>
-                                <span class="font-medium">Email</span>
-                                <span class="text-gray-400 text-sm mt-1">setyaagung74@gmail.com</span>
-                            </a>
-                        </div>
-
-                        <div class="mt-10 pt-8 border-t border-gray-700">
-                            <h4 class="text-xl font-bold mb-4 gradient-text">Tersedia untuk</h4>
-                            <div class="flex flex-wrap gap-3">
-                                <span
-                                    class="px-4 py-2 bg-gradient-to-r from-cyan-900/30 to-blue-900/30 rounded-full text-sm">Full-time
-                                    Position</span>
-                                <span
-                                    class="px-4 py-2 bg-gradient-to-r from-orange-900/30 to-red-900/30 rounded-full text-sm">Web
-                                    Development</span>
-                                <span
-                                    class="px-4 py-2 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-full text-sm">IT
-                                    Support</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-gray-800">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <div class="text-2xl font-bold mb-2">
-                        <span class="gradient-text">AGUNG</span><span class="text-white">SETYA</span>
-                    </div>
-                    <p class="text-gray-400">Web Developer & IT Support</p>
-                </div>
-                <div class="text-gray-400">
-                    <p>&copy; 2026 Muhammad Agung Setya Budi. All rights reserved.</p>
-                    <p class="text-sm mt-1">Semarang, Indonesia</p>
-                </div>
-            </div>
+            <p class="footer-copy">© 2026 Muhammad Agung Setya Budi</p>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top"
-        class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg hover:opacity-90 transition duration-300 hidden">
+    <button id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+        // Mobile menu
+        const toggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        toggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
+        mobileNav.querySelectorAll('a').forEach(a =>
+            a.addEventListener('click', () => mobileNav.classList.remove('open'))
+        );
 
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
-
-        // Smooth scrolling for navigation links
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
+                const id = this.getAttribute('href');
+                if (id === '#') return;
+                const el = document.querySelector(id);
+                if (el) {
+                    e.preventDefault();
+                    window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
                 }
             });
         });
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
+        // Back to top
+        const backBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) backBtn.classList.add('show');
+            else backBtn.classList.remove('show');
         });
-
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Contact Form Submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-
-            // Show success message (in a real application, this would submit to a server)
-            alert(
-                `Terima kasih ${name}! Pesan Anda dengan subjek "${subject}" telah dikirim. Saya akan menghubungi Anda melalui email ${email} segera.`
-            );
-
-            // Reset form
-            document.getElementById('contact-form').reset();
-        });
-
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements to animate
-        document.querySelectorAll('.card-glass, .section-title, .project-card').forEach(el => {
-            observer.observe(el);
-        });
+        backBtn.addEventListener('click', () =>
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        );
     </script>
 </body>
-
 </html>
